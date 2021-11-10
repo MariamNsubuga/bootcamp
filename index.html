@@ -37,7 +37,7 @@
                 
                 <p>Hello,</p>
                 <h2>Welcome to the <br> Code Queen Bootcamp!</h2> <br>
-                <div id="my-signin2"></div>
+                <button type="submit" id="submit">SignUp with Email</button>
             </div>
         </div>
 
@@ -91,24 +91,5 @@
         </p>
     </footer>
     
-    <script>
-        function onSuccess(googleUser) {
-          console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
-        }
-        function onFailure(error) {
-          console.log(error);
-        }
-        function renderButton() {
-          gapi.signin2.render('my-signin2', {
-            'scope': 'profile email',
-            'longtitle': true,
-            'theme': 'dark',
-            'onsuccess': onSuccess,
-            'onfailure': onFailure
-          });
-        }
-      </script>
-    
-      <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
 </body>
 </html>

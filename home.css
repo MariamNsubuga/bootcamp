@@ -142,12 +142,18 @@ main{
     line-height: 40px;
     text-align: center;
 }
-#my-signin2 {
+#submit {
     align-self: center;
     max-width: 100%;
+    background-color: rgb(233, 164, 36);
+    border: thin;
+    border-radius: 6px;
+    padding: 20px;
+    font-weight: 800;
+    font-size: 20px;
 }
 
-#my-signin2:hover {
+#submit:hover {
     transform: scale(1.05);
     animation-duration: 2s;
     animation-fill-mode: forwards;
