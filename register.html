@@ -3,122 +3,63 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-  
+
     <title>Register Form </title>
     <link rel="stylesheet" href="register.css" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
     <script type="text/javascript" lang="javascript" src="register.js"></script>
 
 
- <!--   <script>
-        function validate() {
-            var Fname =
-                document.forms["RegForm"]["fname"];
-            var Uname =
-                document.forms["RegForm"]["uname"];
-            var Email =
-                document.forms["RegForm"]["email"];
-            var Tele =
-                document.forms["RegForm"]["tel"];
-            var Pass =
-                document.forms["RegForm"]["pwd"];
-            var Cpass =
-                document.forms["RegForm"]["cpwd"];
-            var Per =
-                document.forms["RegForm"]["person"];
-            
 
-            if (Fname.value == "") {
-                alert("Please enter your  Full Name.");
-                Fname.focus();
-                return false;
-            }
 
-            if (Uname.value == "") {
-                alert("Please enter your  User Name.");
-                Uname.focus();
-                return false;
-            }
-            if (Tele.value == "") {
-                alert("Please enter your Telephone.");
-                Tele.focus();
-                return false;
-            }
-
-            if (Email.value == "") {
-                alert(
-                    "Please enter a valid e-mail address.");
-                email.focus();
-                return false;
-            }
-
-            if (Per.value == "") {
-                alert(
-                    "Please select an option.");
-                Per.focus();
-                return false;
-            }
-
-            if (Pass.value == "" || !Pass.value.match(/^.{5,15}$/)) {
-                alert("Please enter your password and it should be length must be between 5-15 characters!");
-                Pass.focus();
-                return false;
-            }
-
-            if (Cpass.value == "" ) {
-                alert("Please confirm password");
-                Cpass.focus();
-                return false;
-            }
-
-            if (Pass.value != Cpass.value) {
-                alert("Password did not match");
-            }
-
-            
-
-            return true;
-        }
-    </script> -->
 </head>
 <body>
-   
-   <div class="head">
-       <img src="logo.png" alt="logo" />
-       
-   </div>
-   <div class="second">
-       <h1>Register Here</h1>
-       <h3><em>Its completelty free!!!!</em></h3>
-       <form  name="RegForm" class="first" id="reg"  onsubmit="return validate()"  >
-           <label>Are you a Student or Facilator?</label>
-           <select id="person" name="person">
-               <option  value="" disabled selected hidden>Please choose one</option>
-               <option value="0">Facilator</option>
-               <option value="1">Student</option>
-           </select><br /><br />
-           <label>Full Name</label><br />
-           <input type="text" placeholder="Full Name" name="fname" id="fname"  /> <br /><br />
-           <label>User Name</label><br />
-           <input type="text" placeholder="User Name" name="uname" id="uname" />   <br /><br />
-           <label>Email</label><br />
-           <input type="email" placeholder="Email" name="email" id="email" />  <br /><br />
-           <label>Telephone</label><br />
-           <input type="tel" placeholder="Telephone" name="tel" id="tel" />  <br /><br />
-           <label>Password</label><br />
-           <input type="password" placeholder="Password" name="pwd" id="pwd" />  <br /><br />
-           <label>Confirm Password</label><br />
-           <input type="password" placeholder="Confirm Password" name="cpwd" id="cpwd" />  <br /> <br />
 
-           <button id="register" name="submit" value="submit" type="submit"  >Register</button>
-           <!-- <button id="login">Already have an account? Login here</button>-->
-           <a href="#" id="login">Already have an account?</a>
-       </form>
+    <div class="head">
+        <img src="logo.png" alt="logo" />
 
-   </div>
+    </div>
+    <div class="second">
+        <h1>Register Here</h1>
+        <h3><em>Its completelty free!!!!</em></h3>
+        <form name="RegForm" class="first" id="reg" >
+            <label>Are you a Student or Facilator?</label>
+            <select id="person" name="person">
+                <option value="" disabled selected hidden>Please choose one</option>
+                <option value="0">Facilator</option>
+                <option value="1">Student</option>
+            </select><br /><br />
+                           <div>
+                               <label>Full Name</label><br />
+                               <input type="text"
+                                      className="form-input"
+                                      placeholder="Full Name"
+                                      name="fname"
+                                      id="fname"
+                                      value={values.fname}
+                                      onChange={handleChange} />
+                               {errors.fname && <p> {errors.fname}</p>} 
+                           </div>
+           
+            <label>User Name</label><br />
+            <input type="text" placeholder="User Name" name="uname" id="uname" />   <br /><br />
+            <label>Email</label><br />
+            <input type="email" placeholder="Email" name="email" id="email" />  <br /><br />
+            <label>Telephone</label><br />
+            <input type="tel" placeholder="Telephone" name="tel" id="tel" />  <br /><br />
+            <label>Password</label><br />
+            <input type="password" placeholder="Password" name="pwd" id="pwd" />  <br /><br />
+            <label>Confirm Password</label><br />
+            <input type="password" placeholder="Confirm Password" name="cpwd" id="cpwd" />  <br /> <br />
+
+            <button id="register" name="submit" value="submit" type="submit" onsubmit="return validate(values)">Register</button>
+            <!-- <button id="login">Already have an account? Login here</button>-->
+            <a href="#" id="login">Already have an account?</a>
+        </form>
+
+    </div>
+
+
     
-  
-   
 </body>
 </html>
