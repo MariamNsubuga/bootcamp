@@ -54,7 +54,7 @@ function checkInputs() {
     }
 
     if (password2Value === '') {
-        setErrorFor(password2, 'Password2 cannot be blank');
+        setErrorFor(password2, 'You did not confirm your password');
     } else if (passwordValue !== password2Value) {
         setErrorFor(password2, 'Passwords does not match');
     } else {
