@@ -1,0 +1,374 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(
+        #334756, 
+        rgba(255, 0, 0, 0.45)
+      ), url('./images/christina-wocintechchat-com-Yp-X2Yba_14-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: gainsboro;
+    position: relative;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    background-color: rgb(104, 101, 101);
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    padding-top: 3px;
+}
+
+@media (min-width: 500px){
+    header {
+        flex-wrap: wrap;
+    }
+    body {
+        flex-wrap: wrap;
+        background-repeat: no-repeat;
+    }
+}
+
+#header-img {
+    grid-column: 1;
+    width: 100%;
+    align-self: center;
+}
+
+@media (max-width: 650px) {
+    #header-img {
+        margin-top: 10px;
+        width: 100%;
+        position: relative;
+    }
+}
+
+#nav-bar{
+    grid-column: 2;
+    align-self: center;
+    justify-self: right;
+    display: flex;
+    margin-right: 8px;
+}
+
+.nav-link{
+    text-decoration: inherit;
+    margin: 20px;
+    color: inherit;
+}
+
+nav {
+    font-weight: 1000;
+    color: rgba(233, 164, 36, 0.781);
+}
+
+@media(max-width: 500px){
+    nav {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        column-gap: 0;
+    }
+      nav li {
+        padding-bottom: 0;
+    }
+}
+  
+main{
+    margin: auto;
+    position: relative;
+    max-width: 100%;
+}
+
+#page1{
+    display: grid;
+    grid-template-columns: 400px 800px;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+}
+
+#home-div{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 50px;
+}
+
+#home-div h1{
+    font-size: 80px;
+    color: white;
+    margin-top: 100px;
+}
+
+#home-div p{
+    font-size: 20px;
+    color: white;
+}
+
+#signup-div {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    width: calc(100% / 3);
+    margin: 10px;
+    background-color:white;
+    border-radius: 10px;
+    margin-top: 200px;
+    padding: 60px 20px 60px 20px;
+    opacity: 0.9;
+}
+
+#signup-div p {
+    margin-top: 20px;
+    font-style: italic;
+}
+
+#signup-div h2 {
+    line-height: 40px;
+    text-align: center;
+}
+#submit {
+    align-self: center;
+    max-width: 100%;
+    background-color: rgb(233, 164, 36);
+    border: thin;
+    border-radius: 6px;
+    padding: 20px;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+#submit:hover {
+    transform: scale(1.05);
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@media(max-width: 1000px) {
+    #page1 {
+        margin-top: 2px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    #home-div h1, p {
+        align-content: center;
+    }
+    #home-div h1 {
+        font-size: 70px;
+        align-content: center;
+        margin-top: 70px;
+    }
+    
+    #signup-div {
+        margin-top: 20px;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    #signup-img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 500px){
+    main {
+        margin-top: 100px;
+    }
+    #page1 {
+        margin-top: 2px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    #home-div h1, p {
+        align-content: center;
+    }
+    #home-div h1 {
+        font-size: 70px;
+        align-content: center;
+        margin-top: 70px;
+    }
+    
+    #signup-div {
+        margin-top: 20px;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    #signup-img {
+        max-width: 100%;
+    }
+    
+    #my-signin2 {
+        align-self: center;
+        margin: auto;
+    }
+}
+
+.courses {
+    text-align: center;
+    padding: 4rem;
+    margin-top: 180px; 
+    
+}
+
+@media (max-width: 650px) {
+    .courses{
+        margin-top: 20px;
+    }
+}
+
+.courses h2 {
+    margin: 0 auto 4rem auto;
+    font-size: 4rem;
+    color: white;
+}
+
+#courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,
+    minmax(320px, 6fr));
+    grid-gap: 4rem;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 1rem;;
+}
+
+#course-div {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    width: 100%;
+    margin: 10px;
+    border-radius: 30px;
+    background-color: black;
+    padding: 0 0 30px 0;
+}
+
+
+#course-div a {
+    color: rgb(233, 164, 36);
+    transition: color 0.3s ease-out;
+    font-size: 2rem;
+    padding: 0 0 10px 0;
+    margin-top: 0;
+    text-decoration: none;
+}
+
+#course-div a:hover {
+    color: white;
+}
+
+#courses-img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+footer {
+    margin-top: 50px;
+    background-color: rgba(233, 164, 36, 0.781);
+    padding: 40px;
+    align-content: center;
+}
+
+#newsletter {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(245, 245, 245, 0.582);
+    padding: 5px 20px 30px 20px;
+    border-radius: 4px;
+
+}
+
+#newsletter h2 {
+    text-align: center;
+    font-weight: 800;
+    padding: 20px;
+}
+
+#btn {
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    gap: 10px;
+}
+
+#email-btn, #submit-btn {
+    border-radius: 8px;
+    font-size: 20px;
+    border: thin;
+}
+
+#email-btn {
+    padding: 0.3rem 0.5rem;
+    width: 400px;
+}
+
+#submit-btn {
+    padding: 0.7rem;
+    width: 150px;
+    background-color: rgba(233, 164, 36, 0.781);
+}
+
+#submit-btn:hover {
+    transform: scale(1.05);
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+footer > nav {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    margin-top: 40px;
+}
+
+footer #contact {
+    justify-content: center;
+    font-size: 30px;
+    font-style: bold;
+    font-weight: 800;
+    margin-left: 40px;
+
+}
+  
+footer > p {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 0.9em;
+    color:black;
+    margin-right: 50px;
+}
+
+.fa {
+    justify-content: center;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+  }
+  
+.fa:hover {
+    opacity: 0.7;
+}
+  

@@ -1,3 +1,5 @@
+
+
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
 
@@ -13,6 +15,24 @@ body {
     justify-content: center;
     min-height: 100vh;
     margin: 0;
+
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /*  background-color: #0072ff;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+
 
       */
     background-image: linear-gradient( #334756, rgba(255, 0, 0, 0.45) ), url('./images/christina-wocintechchat-com-Yp-X2Yba_14-unsplash.jpg');
