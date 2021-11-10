@@ -1,5 +1,3 @@
-
-
 const form = document.getElementById('form');
 const username = document.getElementById('username');
 const email = document.getElementById('email');
@@ -32,50 +30,14 @@ function checkInputs() {
         setErrorFor(telephone, 'Phone number cannot be blank');
     } else {
         setSuccessFor(telephone);
-    } 
-
-
-const form = document.getElementById('form');
-const username = document.getElementById('username');
-const email = document.getElementById('email');
-const password = document.getElementById('password');
-const password2 = document.getElementById('password2');
-const telephone = document.getElementById('telephone');
-//const person = document.getElementById('person');
-
-form.addEventListener('submit', e => {
-    e.preventDefault();
-
-    checkInputs();
-});
-
-function checkInputs() {
-    // trim to remove the whitespaces
-    const usernameValue = username.value.trim();
-    const emailValue = email.value.trim();
-    const passwordValue = password.value.trim();
-    const password2Value = password2.value.trim();
-    const telephoneValue = telephone.value.trim();
-    //const personValue = person.value.trim();
-    if (usernameValue === '') {
-        setErrorFor(username, 'Username cannot be blank');
-    } else {
-        setSuccessFor(username);
     }
 
-    if (telephoneValue === '') {
-        setErrorFor(telephone, 'Phone number cannot be blank');
-    } else {
-        setSuccessFor(telephone);
-    } 
 
-
-   
-  /* if (personValue === '') {
-        setErrorFor(person, 'This cannot be blank');
-    } else {
-        setSuccessFor(person);
-    } */
+    /* if (personValue === '') {
+          setErrorFor(person, 'This cannot be blank');
+      } else {
+          setSuccessFor(person);
+      } */
 
     if (emailValue === '') {
         setErrorFor(email, 'Email cannot be blank');
@@ -115,4 +77,3 @@ function setSuccessFor(input) {
 function isEmail(email) {
     return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }
-
