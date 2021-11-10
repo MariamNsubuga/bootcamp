@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login </title>
+    <link rel="stylesheet" href="login.css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+</head>
+<body>
+   
+   <div class="head">
+       <img src="./img/logo.png" alt="logo" />
+       
+   </div>
+   <div class="second">
+       <h1>Login</h1>
+       <h3>Welcome back! Please login to your account</h3>
+       <form method="post" action="#" name="Login" class="first" id="login"  onsubmit="return validate()"  >
+           <label>User Name</label><br />
+           <input type="text" placeholder="Jane Doe" name="uname" id="uname" />   <br /><br />
+           <label>Email</label><br />
+           <input type="email" placeholder="janedoe@gmail.com" name="email" id="email" />  <br /><br />
+           <label>Password</label><br />
+           <input type="password" placeholder="********" name="pwd" id="pwd" />  <br /><br />
+           <input class="remember" type="checkbox" checked="checked">Remember me <br><br>
+
+           <button id="Login" name="submit" value="submit" type="submit"  >Login</button><br><br>
+           New User? <a href="register.html" class="signup">Signup</a>
+       </form>
+
+   </div>
+    
+  <script type="text/javascript" lang="javascript" src="login.js"></script>
+   
+</body>
+</html>
