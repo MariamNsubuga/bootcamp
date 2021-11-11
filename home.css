@@ -10,10 +10,7 @@ body{
     background-image: linear-gradient(315deg, #a55c1b 0%, #000000 74%);
     background-image: linear-gradient(315deg, #ffa69e 0%, #5d4954 74%),
     url('./images/christina-wocintechchat-com-Yp-X2Yba_14-unsplash.jpg');*/
-    background-image: linear-gradient(
-        rgb(233, 164, 36), 
-        rgba(23, 23, 24, 0.822)
-      ), url('./images/christina-wocintechchat-com-Yp-X2Yba_14-unsplash.jpg');
+    background-image: url('./images/christina-wocintechchat-com-Yp-X2Yba_14-unsplash.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -191,6 +188,9 @@ main{
 }
 
 @media (max-width: 500px){
+    header {
+        padding: 0;
+    }
     main {
         margin-top: 100px;
     }
@@ -260,9 +260,9 @@ main{
     justify-self: center;
     width: 100%;
     margin: 10px;
-    border-radius: 30px;
+    border-radius: 10px;
     background-color: black;
-    padding: 0 0 30px 0;
+    padding: 0 0 10px 0;
 }
 
 
