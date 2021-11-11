@@ -1,39 +1,81 @@
+﻿﻿
 <!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login </title>
-    <link rel="stylesheet" href="login.css" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
+    <meta charset="UTF-8">
+    <title>Login Form</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css'>
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
-   
-   <div class="head">
-       <img src="./img/logo.png" alt="logo" />
-       
-   </div>
-   <div class="second">
-       <h1>Login</h1>
-       <h3>Welcome back! Please login to your account</h3>
-       <form method="post" action="#" name="Login" class="first" id="login"  onsubmit="return validate()"  >
-           <label>User Name</label><br />
-           <input type="text" placeholder="Jane Doe" name="uname" id="uname" />   <br /><br />
-           <label>Email</label><br />
-           <input type="email" placeholder="janedoe@gmail.com" name="email" id="email" />  <br /><br />
-           <label>Password</label><br />
-           <input type="password" placeholder="********" name="pwd" id="pwd" />  <br /><br />
-           <input class="remember" type="checkbox" checked="checked">Remember me <br><br>
+    <header id="header">
+        <a href='https://www.linkpicture.com/view.php?img=LPic618a26b551a9e1207684833'>
+            <img src='https://www.linkpicture.com/q/Screenshot_2021-11-05_at_21.40.05-removebg-preview.png' alt="Code Queen logo" type='image' id="header-img">
+        </a>
 
-           <button id="Login" name="submit" value="submit" type="submit"  >Login</button><br><br>
-           New User? <a href="register.html" class="signup">Signup</a>
-       </form>
+        <nav id="nav-bar">
+            <a href="#courses" class="nav-link">Courses</a>
+            <a href="https://www.etc.education/kampala" target="_blank" class="nav-link">About</a>
+            <a href="login.html" class="nav-link">login</a>
+            <a href="register.html" class="nav-link">Sign Up</a>
+        </nav>
+    </header>
 
-   </div>
-    
-  <script type="text/javascript" lang="javascript" src="login.js"></script>
-   
+    <div class="container">
+        <div class="header">
+            <h2>Login</h2>
+        </div>
+        <form id="form" class="form">
+
+
+            <div class="form-control">
+                <label for="username">Username</label>
+                <input type="text" placeholder="dotnettec" id="username" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+
+
+
+
+            <div class="form-control">
+                <label for="username">Password</label>
+                <input type="password" placeholder="Password" id="password" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+
+            <button>Login</button> <br />
+            <a href="register.html">Are you new here? Signup</a>
+        </form>
+    </div>
+    <!--  <footer>
+          <div id="newsletter">
+              <h2>Want to get the latest Updates?</h2>
+              <div id="btn">
+                  <input type="email" name="newsletter" id="email-btn" placeholder="username@email.com">
+                  <button type="submit" id="submit-btn">Submit</button>
+              </div>
+          </div>
+
+          <nav id="footer-nav">
+              <a href="#" target="_blank" class="fa fa-facebook"></a>
+              <a href="#" target="_blank" class="fa fa-twitter"></a>
+              <a href="#" target="_blank" class="fa fa-linkedin"></a>
+              <a href="#" target="_blank" class="fa fa-instagram"></a>
+          </nav>
+          <p id="contact">GET IN TOUCH</p>
+          <p>
+              &copy;2021, CodeQueen
+          </p>
+      </footer> -->
+    <script src="login.js"></script>
+
 </body>
 </html>
+
+
+
+

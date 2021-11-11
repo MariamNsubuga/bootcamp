@@ -1,31 +1,47 @@
-function validate() {
-    var Uname =
-        document.forms["Login"]["uname"];
-    var Email =
-        document.forms["Login"]["email"];
-    var Pass =
-        document.forms["Login"]["pwd"];
-    
+const form = document.getElementById('form');
+const username = document.getElementById('username');
+const password = document.getElementById('password');
 
-    if (Uname.value == "") {
-        alert("Please enter your  User Name.");
-        Uname.focus();
-        return false;
-    }
 
-    if (Email.value == "") {
-        alert(
-            "Please enter a valid e-mail address.");
-        email.focus();
-        return false;
-    }
+form.addEventListener('submit', e => {
+    e.preventDefault();
 
-    if (Pass.value == "" || !Pass.value.match(/^.{5,15}$/)) {
-        alert("Please enter your password and it should be length must be between 5-15 characters!");
-        Pass.focus();
-        return false;
+    checkInputs();
+});
+
+function checkInputs() {
+    // trim to remove the whitespaces
+    const usernameValue = username.value.trim();
+
+    const passwordValue = password.value.trim();
+
+    if (usernameValue === '') {
+        setErrorFor(username, 'Username cannot be blank');
+    } else {
+        setSuccessFor(username);
     }
 
 
-    return true;
+
+    if (passwordValue === '') {
+        setErrorFor(password, 'Password cannot be blank');
+    } else {
+        setSuccessFor(password);
+    }
+
+
 }
+
+function setErrorFor(input, message) {
+    const formControl = input.parentElement;
+    const small = formControl.querySelector('small');
+    formControl.className = 'form-control error';
+    small.innerText = message;
+}
+
+function setSuccessFor(input) {
+    const formControl = input.parentElement;
+    formControl.className = 'form-control success';
+}
+
+
