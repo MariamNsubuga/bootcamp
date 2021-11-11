@@ -8,7 +8,7 @@
 }
 
 body {
-    
+    /*
     background-image: linear-gradient( #334756, rgba(255, 0, 0, 0.45) ), url('./images/christina-wocintechchat-com-Yp-X2Yba_14-unsplash.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -16,12 +16,20 @@ body {
     background-position: center;
     background-color: gainsboro;
     position: relative;
+    */
+    background-image: linear-gradient( rgb(233, 164, 36), rgba(23, 23, 24, 0.822) ), url('./images/christina-wocintechchat-com-Yp-X2Yba_14-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: gainsboro;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
 }
 
 .container {
@@ -30,24 +38,31 @@ body {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     overflow: hidden;
-    width: 400px;
+    width: 700px;
     max-width: 100%;
+    padding-bottom: 1em;
+    grid-template-columns: 50px 50px;
+    //position: relative;
+    
+    
+  //  margin-top: 150px;
+  //  margin-bottom: 100px;
 }
 
-.header {
+.head {
     border-bottom: 1px solid #f0f0f0;
     background-color: #f7f7f7;
-    padding: 20px 40px;
+    padding: 20px 4px;
 }
 
-    .header h2 {
+    .head h2 {
         margin: 0;
         align-content: center;
-        padding-left: 2.5em;
+        padding-left: 11em;
     }
 
 .form {
-    padding: 30px 40px;
+    padding: 5px 40px;
 }
 
 .form-control {
@@ -121,8 +136,8 @@ body {
     display: block;
     font-family: inherit;
     font-size: 16px;
-    padding: 10px;
-    margin-top: 20px;
+    padding: 5px;
+    margin-top: 10px;
     width: 100%;
 }
 
@@ -131,6 +146,83 @@ body {
     flex-direction: column;
 }
 
+a{
+    align-content:center;
+    padding-left: 250px;
+   
+}
 
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: rgb(104, 101, 101);
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    padding-top: 3px;
+}
+
+@media (min-width: 500px) {
+    header {
+        flex-wrap: wrap;
+    }
+
+    body {
+        flex-wrap: wrap;
+        background-repeat: no-repeat;
+    }
+}
+
+#header-img {
+    grid-column: 1;
+    width: 100%;
+    align-self: center;
+}
+
+@media (max-width: 650px) {
+    #header-img {
+        margin-top: 10px;
+        width: 100%;
+        position: relative;
+    }
+}
+
+#nav-bar {
+    grid-column: 2;
+    align-self: center;
+    justify-self: right;
+    display: flex;
+    margin-right: 8px;
+}
+
+.nav-link {
+    text-decoration: inherit;
+    margin: 20px;
+    color: inherit;
+}
+
+nav {
+    font-weight: 1000;
+    color: rgba(233, 164, 36, 0.781);
+}
+
+@media(max-width: 500px) {
+    nav {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        column-gap: 0;
+    }
+
+        nav li {
+            padding-bottom: 0;
+        }
+}
 
 
