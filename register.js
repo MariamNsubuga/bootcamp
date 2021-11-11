@@ -4,6 +4,7 @@ const email = document.getElementById('email');
 const password = document.getElementById('password');
 const password2 = document.getElementById('password2');
 const telephone = document.getElementById('telephone');
+
 //const person = document.getElementById('person');
 
 form.addEventListener('submit', e => {
@@ -19,12 +20,16 @@ function checkInputs() {
     const passwordValue = password.value.trim();
     const password2Value = password2.value.trim();
     const telephoneValue = telephone.value.trim();
+    
     //const personValue = person.value.trim();
     if (usernameValue === '') {
         setErrorFor(username, 'Username cannot be blank');
     } else {
         setSuccessFor(username);
     }
+
+   
+        
 
     if (telephoneValue === '') {
         setErrorFor(telephone, 'Phone number cannot be blank');
@@ -60,6 +65,9 @@ function checkInputs() {
     } else {
         setSuccessFor(password2);
     }
+
+
+   
 }
 
 function setErrorFor(input, message) {
@@ -72,8 +80,13 @@ function setErrorFor(input, message) {
 function setSuccessFor(input) {
     const formControl = input.parentElement;
     formControl.className = 'form-control success';
+    window.location.href = "login.html";
 }
 
+/*function myFunction() {
+    window.location.href = "login.html";
+}*/
 function isEmail(email) {
     return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }
+ 
