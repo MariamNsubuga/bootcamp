@@ -27,6 +27,7 @@ function checkInputs() {
         setErrorFor(password, 'Password cannot be blank');
     } else {
         setSuccessFor(password);
+        window.location.href = "facilitator.html";
     }
 
 

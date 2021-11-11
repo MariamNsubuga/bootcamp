@@ -698,6 +698,10 @@ section.upload {
     }
 }
 
+#logout{
+    background:red;
+    border-radius: 2px;
+}
 @media screen and (max-width: 1680px) and (min-width: 846px) { 
     .menu .social-network ul li a {
         width: 36px;
