@@ -1,60 +1,21 @@
-*{ margin: 0;
-    padding: 0;
-    box-sizing: border-box; 
-
-}
 body{
-    background-image:url(y.jp.jpg);
-    background-size: cover; 
-    background-position: center;   
-    font-family:sans-serif;
+    background: #dedede;
+    font-family: arial;
+    margin: 0;
+    padding: 0;
 }
-.menu-bar{
-    background-color: rgb(185, 124, 11);
-    text-align: center;
+.dropdwn{
+    margin: 0 auto;
 }
-.menu-bar ul{
-    display: inline-flex;
-    list-style: none;
-    color: #000;
-}
-.menu-bar ul li{
-    width: 120px;
-    margin: 15px;
-    padding: 15px;
-}
-.menu-bar ul li a {
-    text-decoration: none;
-    color: black;
-}
-.active,.menu-bar ul li:hover {
-    background-color: pale white;
-    border-radius: 3px;
+.nav{
+    height: 60px;
+    background:#2c3e50;
+    box-shadow: 0 10px 15px rgba(0,0,0,0,1);
 
 }
-.menu-bar .fa{
-    margin-right: 8px;
-}
-.sub-menu {display: none;
-
-}
-.menu-bar ul li:hover.sub-menu {
-    display: block;
-    position: absolute;
-    background-color: orange;
-    margin-top: 15px;
-    margin-left: 15px;
-
-}
-.menu-bar ul li:hover.sub-menu ul{
-    display: block;
-    margin: 10px;
-}
-.menu-bar ul li:hover.sub-menu ul li{
+.logo{
+    padding: 5px,0,0,80px;
     width: 150px;
-    padding: 10px;
-    border-bottom: 1px  dotted #fff;
-    background: transparent;
-    border-radius: 0px;
-    text-align: left;
+    height: auto;
+
 }
