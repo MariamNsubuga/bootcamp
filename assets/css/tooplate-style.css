@@ -14,7 +14,12 @@ body {
 }
 
 #page-wraper {
-    background: #4AA0DD no-repeat center center fixed;
+    background-color: #f1a32c;
+    /*background: #FFB75E;  /* fallback for old browsers */
+    /*background: -webkit-linear-gradient(to left, #ED8F03, #FFB75E) no-repeat center center fixed;  /* Chrome 10-25, Safari 5.1-6 */
+    /*background: linear-gradient(to left, #ED8F03, #FFB75E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    /*background: #4AA0DD no-repeat center center fixed;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -230,13 +235,13 @@ html {
 
 .menu {
     left: 8%;
-  -webkit-transition: -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
-  -webkit-overflow-scrolling: touch;
-  background-color: #2279BD;
-  box-sizing: border-box;
-  height: 100vh;  
-  max-height: 100vh !important;
-  max-width: 80vw !important;
+    -webkit-transition: -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
+    -webkit-overflow-scrolling: touch;
+    background-color: #6D8299;
+    box-sizing: border-box;
+    height: 100vh;  
+    max-height: 100vh !important;
+    max-width: 80vw !important;
   min-width: 45px !important;
   outline: none;
   overflow-x: hidden !important;
