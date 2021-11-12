@@ -242,8 +242,7 @@ main{
 .courses h2 {
     margin: 0 auto 4rem auto;
     font-size: 4rem;
-    color: white;
-    
+    color: rgba(233, 164, 36, 0.781);
 }
 
 #courses-grid {
